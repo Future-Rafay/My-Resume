@@ -4,11 +4,24 @@
     box-sizing: border-box;
     font-family:   Arial, Helvetica, sans-serif
 }
-.container{
-    margin: 10px;
+
+.create-resume h1{
+    text-align: center;
+    color: white;
+    background: #898989;
+    line-height: 60px;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+}
+.create-resume h1 a{
+    text-decoration: none;
+    color: white;
+}
+.my-resume-container{
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     border: 4px solid #b3db78;
+    background-color: #898989;
 }
 .my-resume{
     background-color: #DDFCAD;
@@ -213,6 +226,11 @@ hr{
         line-height: 30px;
         list-style:disc;
     }
+
+    .skills ul li {
+        font-size: 14px;
+    }
+}
 
     .skills ul li {
         font-size: 14px;
