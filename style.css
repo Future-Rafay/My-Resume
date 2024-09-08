@@ -1,0 +1,220 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:   Arial, Helvetica, sans-serif
+}
+.container{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #b3db78;
+}
+.my-resume{
+    background-color: #DDFCAD;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#my-name{
+    font-size: 48px;
+}
+#my-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50% ;
+    margin-right: 50px;
+}
+
+.contact{
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    background: #DDFCAD;
+}
+hr{
+    border: 2px solid #C8E087;
+}
+.experiance{
+    display: flex;
+    align-items: center;
+    background-color:#C8E087;
+    padding: 20px;
+    font-size: 38px;
+}
+.experiance h1{
+    font-size: 38px;
+    margin-right: 20px;
+}
+
+.target-postion-title{
+    display: block;
+    background-color: #DDFCAD;
+    font-size: 38px;
+    padding: 20px;
+}
+
+.education{
+    background: #C8E087;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.education h1{
+    font-size: 38px;
+}
+.education p { 
+    font-size: 24px;
+}
+#show-skills{
+    background-color: #DDFCAD;
+    padding: 20px 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 4px solid #C8E087;
+    outline: none;
+    font-size: 18px;
+}
+.skills{
+    transition: opacity 3s ease;/*ddddd*/
+    background-color: #DDFCAD;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+.skills[style="display: none"] {
+    opacity: 0.2;
+}
+
+.skills h1{
+    font-size: 38px
+}
+.skills span{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.skills ul {
+    margin-left: 10%;
+    margin-right: 30px;
+    line-height: 40px;
+    display: block; 
+    list-style: none;
+}
+.skills ul li{
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.languages{
+    display: flex;
+    align-items: center;
+    background-color:#C8E087;
+    padding: 20px;
+    font-size: 28px;
+}
+.languages h1{
+    font-size: 34px;
+    margin-right: 20px;
+}
+@media screen and (min-width: 1024px) {
+    
+
+    .skills ul {
+        width: 30%;  
+        margin: 0;   
+        display: block; 
+    }
+}
+@media screen and (max-width: 768px) {
+    .my-resume {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    #my-name {
+        font-size: 36px;
+
+    }
+
+    #my-pic {
+        margin-top: 20px;
+        position: relative;
+        margin: 0 auto;
+        top: 0;
+        right: 0;
+        transform: none;
+    }
+
+    .experiance {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .experiance h1 {
+        font-size: 32px;
+    }
+
+    .target-postion-title {
+        font-size: 32px;
+    }
+
+    .education h1, .skills h1 {
+        font-size: 32px;
+    }
+
+    .contact {
+        font-size: 20px;
+    }
+
+    .education p {
+        font-size: 20px;
+    }
+
+    .skills span {
+        font-size: 20px;
+    }
+
+    .skills ul li {
+        font-size: 16px;
+        list-style:disc;
+    }
+    .languages{
+        font-size: 18px;
+        text-align: center;
+    }
+    .languages h1{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #my-name {
+        font-size: 28px;
+    }
+
+    #my-pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact {
+        font-size: 18px;
+    }
+
+    .experiance, .target-postion-title, .education, .skills .languages {
+        font-size: 24px;
+    }
+
+    .skills ul {
+        margin-left: 10%;
+        line-height: 30px;
+        list-style:disc;
+    }
+
+    .skills ul li {
+        font-size: 14px;
+    }
+}
