@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Own Resume</title>
+    <link rel="stylesheet" href="from.css">
+</head>
+
+<body>
+    <div class="big-container">
+
+
+        <a href="index.html">Go Back</a>
+        <div class="container">
+            <h1>Please fill this form</h1>
+            <form id="resume-form" action="form.js">
+
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+
+                <label for="photo">Upload photo:</label>
+                <input type="file" id="photo">
+                <p>Image should be clear and less than 5 MB</p>
+
+                <label for="location">Personal Details:</label>
+                <input type="text" id="location" placeholder="State, City" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="000-0000-0000" required>
+
+                <label for="objective">Objective:</label>
+                <input type="text" id="objective" placeholder="Your Objective" required>
+
+                <label for="profile">Profile:</label>
+                <input type="text" id="profile" placeholder="Something About You">
+
+                <label for="education">Education:</label>
+                <input type="text" id="education" placeholder="Institute (Year)" required>
+
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" placeholder="Your Skills separated by comma">
+
+                <label for="languages">Languages:</label>
+                <input type="text" id="languages" placeholder="E.g English, Urdu">
+
+                <label for="color1">Color Theme 1:</label>
+                <input type="color" id="color1">
+                <label for="color2">Color Theme 2:</label>
+                <input type="color" id="color2" required>
+
+                <div class="btn">
+                    <button type="submit" id="submit">Let's Create</button>
+                    <button type="button" id="clear">Clear Form</button>
+                </div>
+            </form>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>
